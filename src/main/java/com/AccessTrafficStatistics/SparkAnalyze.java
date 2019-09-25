@@ -16,7 +16,7 @@ public class SparkAnalyze {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		//创建Spark配置文件
-		SparkConf conf = new SparkConf().setAppName("AccessTrafficStatistics").setMaster("local");
+		SparkConf conf = new SparkConf().setAppName("AccessTrafficStatistics").setMaster("local");;//.setMaster("master");
 		//创建上下文对象
 		JavaSparkContext sc = new JavaSparkContext(conf);
 		//读取文件，创建RDD
